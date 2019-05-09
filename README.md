@@ -10,7 +10,7 @@ AVE:
 NAN:
 
 ## Train and Test
-1. Before to train the model, please download the face features from BaiduYun() and put the unzipped data in the directory of ./data/IJBA/. The features are extracted by ResNet34 model trained on WebFace dataset with only Softmax Loss.
+1. Before to train the model, please download face features from BaiduYun() and put the unzipped data into ./data/IJBA/. The features are extracted by ResNet34 model trained on WebFace dataset with only Softmax Loss.
 
 2. run ./prepare_data/dataset_IJBA.py to prepare the train and test data for IJB-A dataset.
 
