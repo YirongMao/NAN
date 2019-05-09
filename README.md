@@ -19,6 +19,7 @@ NAN:
 # Train Log
 You can find the train log at 
 
-## If you find any bug, please be free to contact me. My email is yirong.maoATvipl.ict.ac.cn
+# Contact
+If you find any bug, please be free to contact me. My email is yirong.maoATvipl.ict.ac.cn
 
 
