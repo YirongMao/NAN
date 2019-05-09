@@ -1,4 +1,4 @@
-# NAN (Neural Aggregation Network for Video Face Recognition)
+## NAN (Neural Aggregation Network for Video Face Recognition)
 
 I have reproduced NAN on IJB-A, Celebrity-1000 datasets. In this repository I will show how to train and test on IJB-A dataset.
 
