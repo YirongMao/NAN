@@ -17,7 +17,7 @@ NAN: TAR=[54.51, 74.54, 87.66, 96.31]@FAR=[1e-4, 1e-3, 1e-2, 1e-1]
 3. run ./train_ijba.py to train and test on IJB-A dataset
 
 ## Train and Test Log
-You can find the train log at [[log]](https://github.com/YirongMao/NAN/blob/master/data/IJBA/model/model_resnet34_s8_NAN/train_s8b128_.txt)[[eval_result]](https://github.com/YirongMao/NAN/blob/master/data/IJBA/model/model_resnet34_s8_NAN/eval_result.txt)
+You can find the train log at [[log]](https://github.com/YirongMao/NAN/blob/master/data/IJBA/model/model_resnet34_s8_NAN/train_s8b128_.txt) and [[eval_result]](https://github.com/YirongMao/NAN/blob/master/data/IJBA/model/model_resnet34_s8_NAN/eval_result.txt)
 
 ## Contact
 If you find any bug, please be free to contact me. My email is yirong.maoATvipl.ict.ac.cn
