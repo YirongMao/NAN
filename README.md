@@ -5,7 +5,7 @@ I have reproduced NAN on IJB-A, Celebrity-1000 datasets. In this repository I wi
 ## Result
 Average Pooling (AVE) face features within a template as the Baseline method.
 
-AVE: TAR=[39.78, 64.20, 84.143135, 96.04231 ]@FAR=[1e-4, 1e-3, 1e-2, 1e-1]
+AVE: TAR=[39.78, 64.20, 84.14, 96.04 ]@FAR=[1e-4, 1e-3, 1e-2, 1e-1]
 
 NAN: TAR=[54.51, 74.54, 87.66, 96.31]@FAR=[1e-4, 1e-3, 1e-2, 1e-1]
 
