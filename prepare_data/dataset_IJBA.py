@@ -14,7 +14,8 @@ def get_mat(data_dir, template_id):
     mat_path = os.path.join(data_dir, str(template_id) + '.mat')
     item = sio.loadmat(mat_path)
     arr.append(item['feat'])
-
+    
+    # features whose images are horizontal flipped
     mat_path = os.path.join(data_dir, str(template_id) + '_h.mat')
     item = sio.loadmat(mat_path)
     arr.append(item['feat'])
@@ -25,13 +26,13 @@ def get_mat(data_dir, template_id):
 def get_train_test_set():
     # feat_type = 'casianet'
 
-    data_dir = '../data/IJBA/resnet34/resnet34_feat'
+    data_dir = '../data/IJBA/resnet34/resnet34_feat' # the directory which store face features of each template
     save_dir = '../data/IJBA/resnet34'
     split_dir = '../data/IJBA/IJB-A_11_sets'
 
     for idx_split in range(1, 11):
+        # to read train file and collect training faces in to a list by subjects
         train_file = os.path.join(split_dir, 'split' + str(idx_split), 'train_' + str(idx_split) + '.csv')
-
         cur_line = 0
         subs = []
         templates = []
@@ -60,7 +61,8 @@ def get_train_test_set():
         # end of lines
         save(lst_train_faces, os.path.join(save_dir, 'train_subject_{}.bin'.format(idx_split)))
         print('#train subject {} split {}'.format(len(lst_train_faces), idx_split))
-
+        
+        # to get the subject id for each templates
         meta_file = os.path.join(split_dir, 'split' + str(idx_split), 'verify_metadata_' + str(idx_split) + '.csv')
         cur_line = 0
         dict_all_templates = {}
@@ -74,7 +76,8 @@ def get_train_test_set():
             dict_all_templates.update({template_id: subject_id})
 
         print('#total template {} split {}'.format(len(dict_all_templates), idx_split))
-
+        
+        # to read the test file and collect verification pairs 
         test_file = os.path.join(split_dir, 'split' + str(idx_split), 'verify_comparisons_' + str(idx_split) + '.csv')
         lst_test_pairs = []
         for line in open(test_file):
@@ -93,5 +96,4 @@ def get_train_test_set():
 
 
 if __name__ == '__main__':
-    # get_template_id()
     get_train_test_set()
