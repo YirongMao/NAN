@@ -45,7 +45,7 @@ for idx_split in range(1, 11):
     lst_tar = []
     for iter in range(max_iter):
         iter += 1
-        batch, lst_label, lst_len = dataset.next_pair_batch()
+        batch, lst_label, lst_len = dataset.next_pair_batch(set_per_sub)
         batch = np.vstack(batch)
         # batch = skp.normalize(batch)
         lst_len = np.array(lst_len)
