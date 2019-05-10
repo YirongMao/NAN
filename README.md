@@ -3,7 +3,7 @@
 I have reproduced NAN on IJB-A, Celebrity-1000 datasets. In this repository I will show how to train and test on IJB-A dataset.
 
 ## Result
-Average Pooling (AVE) faces features within a template as the Baseline method.
+Average Pooling (AVE) face features within a template as the Baseline method.
 
 AVE: TAR=[39.78, 64.20, 84.143135, 96.04231 ]@FAR=[1e-4, 1e-3, 1e-2, 1e-1]
 
