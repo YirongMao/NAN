@@ -1,6 +1,6 @@
 ## NAN (Neural Aggregation Network for Video Face Recognition)
 
-I have reproduced NAN on IJB-A, Celebrity-1000 datasets. In this repository I will show how to train and test on IJB-A dataset.
+In this repository I will show how to train and test on IJB-A dataset.
 
 ## Result
 Average Pooling (AVE) face features within a template as the Baseline method.
